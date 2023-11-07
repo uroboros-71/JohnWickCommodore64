@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "JohnWickCommodore64"
+description = "JOHN WICK Continental Administration Commodore64 TUI Application"
+version = "0.1"
+
+authors = [
+    {name = "uroboros_71"}
+]
+
+readme = "README.rst"
+requires-python = ">=3.9"
+
+license = {file = "LICENSE"}
+
+keywords = ["commodore", "asciimatics"]
+
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+
+dependencies = [
+    "wcwidth",
+    "pyfiglet >= 0.7.2",
+    "pywin32 ; platform_system == 'Windows'",
+]
+
+[project.scripts]
+continental = "continentalmain:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
