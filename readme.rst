@@ -5,6 +5,8 @@
 
 I watched JOHN WICK Chapter 4 and suddenly wanted to recreate the Commodore terminal in the Administrator's office, so I made one.
 
+===========
+
 Description
 ***********
 
@@ -22,9 +24,9 @@ From source
 
 .. code-block:: bash
 
-git clone https://github.com/uroboros-71/JohnWickCommodore64.git
-cd JohnWickCommodore64
-python3 -m pip install -e .
+    $ git clone https://github.com/uroboros-71/JohnWickCommodore64.git
+    $ cd JohnWickCommodore64
+    $ python3 -m pip install -e .
 
 
 Preparation
@@ -51,3 +53,22 @@ If the terminal allows you to specify the screen size, set Columns 40 and Rows 2
 
 If the terminal does not allow you to specify the screen size, display monitor.txt in the terminal and
 adjust the screen size so that 40 columns and 25 rows can be displayed.
+
+
+Start
+-----
+
+.. code-block:: bash
+    $ continental --memory
+
+.. code-block:: bash
+    $ continental --file
+
+Uninstalle
+************
+
+.. code-block:: bash
+
+    $ python3 -m pip uninstall JohnWickCommodore64
+    $ rm -rf JohnWickCommodore64
+

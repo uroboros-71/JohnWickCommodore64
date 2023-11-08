@@ -3,6 +3,7 @@ import sys
 import argparse
 from asciimatics.effects import Print
 from asciimatics.renderers.figlettext import FigletText
+from asciimatics.renderers.box import Box
 from asciimatics.scene import Scene
 from asciimatics.screen import Screen
 from asciimatics.exceptions import ResizeScreenError
@@ -18,6 +19,12 @@ def john(screen):
 
     # Title
     effects = [
+        Print(screen,
+              Box(screen.width, screen.height, uni=screen.unicode_aware),
+              0, 0,
+              colour=Screen.COLOUR_GREEN,
+              bg=Screen.COLOUR_BLACK,
+              ),
         Print(screen,
               FigletText("CONTIN", "slant"),
               y=3, x=0,
