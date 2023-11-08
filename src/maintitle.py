@@ -41,6 +41,7 @@ class MainMenuView(Frame):
         self.fix()
 
     def update(self, frame_no):
+        # Update Current Time
         dt = self._layouts[1].find_widget("currenttime")
         dt.text = datetime.datetime.now().strftime("%H:%M  %p")
         super().update(frame_no)

@@ -83,7 +83,6 @@ class InitDatabase(metaclass=ABCMeta):
 
     def create_table(self):
         # Create the basic contact table.
-        # self._db.cursor().execute("DROP TABLE IF EXISTS member")
         self._db.cursor().execute('''
             CREATE TABLE IF NOT EXISTS member(
                 id INTEGER PRIMARY KEY,
@@ -97,7 +96,6 @@ class InitDatabase(metaclass=ABCMeta):
         ''')
         self._db.commit()
 
-        # self._db.cursor().execute("DROP TABLE IF EXISTS account")
         self._db.cursor().execute('''
             CREATE TABLE IF NOT EXISTS account(
                 id INTEGER PRIMARY KEY,

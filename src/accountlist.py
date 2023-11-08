@@ -39,12 +39,13 @@ class AccountListView(Frame):
         layout2 = Layout([1, 1, 1])
         self.add_layout(layout2)
         layout2.add_widget(Button("ADD", self._input_account_no), 0)
-        layout2.add_widget(Button("CANSEL", self._quit), 2)
+        layout2.add_widget(Button("CANSEL", self._cansel), 2)
         layout2.add_widget(Divider(height=2, draw_line=False), 1)
         layout2.add_widget(Label(datetime.datetime.now().strftime("%H:%M %p"), 1, align="^", name="currenttime"), 1)
         self.fix()
 
     def update(self, frame_no):
+        # Update Current Time
         dt = self._layouts[1].find_widget("currenttime")
         dt.text = datetime.datetime.now().strftime("%H:%M  %p")
         super().update(frame_no)
@@ -81,7 +82,7 @@ class AccountListView(Frame):
                                 on_close=self._quit_on_ok))
 
     @staticmethod
-    def _quit():
+    def _cansel():
         raise NextScene("Main")
 
 
@@ -135,6 +136,7 @@ class AccountAddView(Frame):
         self.fix()
 
     def update(self, frame_no):
+        # Update Current Time
         dt = self._layouts[1].find_widget("currenttime")
         dt.text = datetime.datetime.now().strftime("%H:%M  %p")
         super().update(frame_no)
@@ -220,6 +222,7 @@ class AccountEditView(Frame):
         self.fix()
 
     def update(self, frame_no):
+        # Update Current Time
         dt = self._layouts[1].find_widget("currenttime")
         dt.text = datetime.datetime.now().strftime("%H:%M  %p")
         super().update(frame_no)

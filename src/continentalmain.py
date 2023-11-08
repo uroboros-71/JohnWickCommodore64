@@ -27,7 +27,7 @@ def john(screen):
               ),
         Print(screen,
               FigletText("CONTIN", "slant"),
-              y=3, x=0,
+              y=3, x=1,
               colour=Screen.COLOUR_GREEN,
               bg=Screen.COLOUR_BLACK,
               ),

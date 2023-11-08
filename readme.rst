@@ -36,13 +36,16 @@ Terminal
 ========
 
 This Application use terminal and Commodore64 font.
+
 You can get commodore64 font `here <https://www.dafont.com/commodore-64.font>`_.
 
 This is the recommended terminal application.
+
 * Windows:  Windows Terminal, cool-retro-term(Need WSL)
 * MacOSX:   iTerm2, cool-retro-term
+* Linux:    cool-retro-term
 
-I don't check linux termial, use a terminal that can display non-equal fonts.
+I don't check other linux termial, use a terminal that can display non-equal fonts.
 
 Setting Terminal
 ----------------
@@ -55,14 +58,17 @@ If the terminal does not allow you to specify the screen size, display monitor.t
 adjust the screen size so that 40 columns and 25 rows can be displayed.
 
 
-Start
+Usage
 -----
 
 .. code-block:: bash
-    $ continental --memory
 
-.. code-block:: bash
-    $ continental --file
+    usage: continental [-h] [-d] [-m]
+
+    options:
+    -h, --help    show this help message and exit
+    -d, --dbfile  The database file to be opened
+    -m, --memory  The database might be stored in memory
 
 Uninstalle
 ************
