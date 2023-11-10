@@ -116,9 +116,10 @@ Youtube
 *******
 
 .. image:: https://i9.ytimg.com/vi/oM6QopbFwxY/mqdefault.jpg?v=654cc491&sqp=CJCKs6oG&rs=AOn4CLD_LvhdnryW-QWgsjgb94YyGmt8CQ
-    :target: https://youtu.be/oM6QopbFwxY
-    :height: 480px
-    :width: 720px
+    :target: https://youtu.be/mQAHIwYoNZ4
+    :height: 720px
+    :width: 1080px
+    :scale: 70%
 
 
 Uninstalle
