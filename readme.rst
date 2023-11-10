@@ -115,7 +115,7 @@ Usage
 Youtube
 *******
 
-.. image:: https://i9.ytimg.com/vi/oM6QopbFwxY/mqdefault.jpg?v=654cc491&sqp=CJCKs6oG&rs=AOn4CLD_LvhdnryW-QWgsjgb94YyGmt8CQ
+.. image:: https://i9.ytimg.com/vi/mQAHIwYoNZ4/mq1.jpg?sqp=CLiouKoG&rs=AOn4CLBX0HolhaqfhnbLmuor3FigR1VbyQ
     :target: https://youtu.be/mQAHIwYoNZ4
     :height: 720px
     :width: 1080px
